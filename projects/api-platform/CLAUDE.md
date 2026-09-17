@@ -7,7 +7,9 @@ than directly in `sandbox`) to leave room for sibling top-level dirs later (e.g.
 `frontend`).
 
 ## Stack
-- Node.js, version pinned via Volta (see `volta` field in root `package.json`)
+- Node.js 24.21.0 (latest LTS as of 2026-09), version pinned via Volta (see `volta`
+  field in root `package.json`) — same version as `frontend`, so both projects on
+  this machine stay on one Node line
 - pnpm workspaces (`packageManager` field pins the exact pnpm version)
 - Turborepo for task orchestration (`turbo.json`)
 - Express.js for the HTTP API (`apps/api`)
