@@ -5,6 +5,11 @@ full diff, this file is for the *why it mattered*.
 
 ## Unreleased
 
+- Made the repo public and turned on branch protection for `main` (PR required,
+  no direct pushes) so it could actually be enforced — GitHub's branch-protection
+  API isn't available on free-tier private repos. Added `.github/CODEOWNERS`
+  (`@pinglala`) and documented the rule in the README. Approvals aren't required
+  to merge, since GitHub won't let the sole code owner approve their own PRs.
 - Bumped both `backend` and `frontend` to Node 24.21.0 (latest LTS); Volta itself
   was already at its latest release (2.0.2), so nothing to do there. Left pnpm at
   10.32.1 rather than its own newer 12.4.2, since only Node/Volta were asked for.
