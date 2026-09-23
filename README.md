@@ -33,3 +33,13 @@ ai-instructions/
   iterate on `SKILL.md`.
 - Note anything worth remembering (a phrasing that worked well, a pattern that backfired) in
   `CHANGELOG.md` so lessons aren't only buried in commit messages.
+
+## Commit rules
+
+- No direct commits to `main` — all changes, including small ones, land through a branch and a
+  pull request. `main` is branch-protected on GitHub to require this.
+- Branch names are free-form but should say what the branch does (e.g. `chore/add-commit-rules`).
+- [`.github/CODEOWNERS`](.github/CODEOWNERS) names the code owner for the repo, so PRs
+  auto-request the right reviewer. Since this is currently a solo repo, PRs don't require an
+  *approving* review to merge (GitHub won't let you approve your own PR anyway) — the rule that's
+  actually enforced is "no direct push to `main`," not "needs a second reviewer."
